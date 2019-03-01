@@ -15,9 +15,9 @@ const wechatSDK = WechatSDK.getInstance({
 ```
 3. 获取js-sdk签名
 ```angular2html
-    wechatJDK.getSignature(req.body.url).then(resp => {
-        console.log(resp);
-    });
+wechatJDK.getSignature(req.body.url).then(resp => {
+    console.log(resp);
+});
 ```
 4. 获取微信授权，wechatJDK.webAuthorize方法作为中间价配置到需要获取微信授权的页面路由后面。
 ```angular2html
