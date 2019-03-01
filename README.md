@@ -3,25 +3,26 @@
 
 #### WechaSDK使用
 1. 导入模块
-```
+```angular2html
 const WechatSKD = require("wechatSKD");
 ```
 2. 实例化模块，本模块使用单例模式，全局只存在一个实例对象。需要传入微信appid和secret
-```
+```angular2html
 const wechatSDK = WechatSDK.getInstance({
     appid: "wx63269ff8e99cf80d",
     secret: "be15277adb1df632e310f779a56cd02c"
 })
 ```
 3. 获取js-sdk签名
-```
+```angular2html
     wechatJDK.getSignature(req.body.url).then(resp => {
         console.log(resp);
     });
 ```
 4. 获取微信授权，wechatJDK.webAuthorize方法作为中间价配置到需要获取微信授权的页面路由后面。
-```
+```angular2html
 router.get("/", wechatJDK.webAuthorize, function(req, res, next){
     res.sendFile("hello world!");
 });
 ```
+
