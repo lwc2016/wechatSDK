@@ -15,7 +15,7 @@ const wechatSDK = WechatSDK.getInstance({
 ```
 3. 获取js-sdk签名
 ```angular2html
-wechatJDK.getSignature(url).then(resp => {
+wechatSDK.getSignature(url).then(resp => {
     console.log(resp);
 });
 ```
