@@ -11,7 +11,7 @@ const sha1 = require("sha1");
         this.accessTokenCache = {};
         // ticket缓存
         this.ticketCache = {};
-        this.authorize = this.authorize.bind(this);
+        this.webAuthorize = this.webAuthorize.bind(this);
         this.getAccessToken2 = this.getAccessToken2.bind(this);
         this.getUserInfo = this.getUserInfo.bind(this);
     };

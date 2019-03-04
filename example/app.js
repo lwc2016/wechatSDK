@@ -5,10 +5,12 @@ const cookieParser = require("cookie-parser");
 const app = express();
 const WechatJDK = require("../index.js");
 
+/*
 const wechatJDK = WechatJDK.getInstance({
     appid: "wx63269ff8e99cf80d",
     secret: "be15277adb1df632e310f779a56cd02c"
 });
+*/
 
 app.use(cookieParser());
 app.use(bodyParser.json());

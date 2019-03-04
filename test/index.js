@@ -3,7 +3,7 @@ const WechatJDK = require("../index.js");
 const expect = require("chai").expect;
 
 describe("wechatJDK", function(){
-    let wechatJDK = new WechatJDK({
+    let wechatJDK = WechatJDK.getInstance({
         appid: "wx63269ff8e99cf80d",
         secret: "be15277adb1df632e310f779a56cd02c"
     });
