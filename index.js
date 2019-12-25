@@ -140,7 +140,7 @@ const sha1 = require("sha1");
                         }
                     }
                     let querystring = search.join("&");
-                    let url = querystring ? req.baseUrl + "?" + querystring : req.baseUrl;
+                    let url = querystring ? req.path + "?" + querystring : req.path;
                     res.redirect(url);
                 })
             }
