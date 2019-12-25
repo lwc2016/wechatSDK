@@ -130,7 +130,7 @@ const sha1 = require("sha1");
                 this.getAccessToken2(req.query.code).then(this.getUserInfo).then(resp => {
                     // 设置cookie
                     for(let item in resp){
-                        res.cookie(item, resp[item], {expires: new Date(Date.now() + 900000)});
+                        res.cookie(item, resp[item], {expires: new Date(Date.now() + 24 * 60 * 60 * 1000)});
                     }
                     let query = req.query;
                     let search = [];
